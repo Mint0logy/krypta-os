@@ -8,7 +8,6 @@
 **Target architecture:** ARM64 / AArch64  
 **Build host:** Ubuntu 24.04 LTS (x86-64, VirtualBox)  
 **Base distribution:** Alpine Linux / postmarketOS ecosystem  
-**Current phase:** M0 — Foundation  
 **Status:** Experimental / early development
 
 ---
@@ -75,7 +74,7 @@ The project will be considered successful when:
 - [x] Install Git.
 - [x] Install basic development tools.
 - [x] Install Visual Studio Code.
-- [ ] Verify all required base tools with `make check`.
+- [x] Verify all required base tools with `make check`.
 - [ ] Record VM and host architecture.
 - [ ] Create a clean VirtualBox snapshot.
 - [ ] Document environment setup in `docs/setup.md`.
@@ -86,31 +85,30 @@ The project will be considered successful when:
 - [x] Create the private GitHub repository `krypta-os`.
 - [x] Initialize the local Git repository.
 - [x] Create the initial directory structure.
-- [ ] Finalize `.gitignore`.
-- [ ] Finalize `README.md`.
-- [ ] Create and maintain `ROADMAP.md`.
-- [ ] Create `docs/journal/001-foundation.md`.
-- [ ] Configure Git commit identity.
-- [ ] Create the first Git commit.
-- [ ] Transfer the initial commit to GitHub from Windows.
+- [x] Finalize `.gitignore`.
+- [x] Finalize `README.md`.
+- [x] Create and maintain `ROADMAP.md`.
+- [x] Configure Git commit identity.
+- [x] Create the first Git commit.
+- [x] Transfer the initial commit to GitHub from Windows.
 
 ## M0.4 — Developer Tooling
 
-- [ ] Implement `scripts/check-env.sh`.
-- [ ] Make the environment script executable.
+- [x] Implement `scripts/check-env.sh`.
+- [x] Make the environment script executable.
 - [ ] Add `make help`.
-- [ ] Add `make check`.
-- [ ] Validate the Makefile.
+- [x] Add `make check`.
+- [x] Validate the Makefile.
 - [ ] Verify the environment script reports missing tools.
-- [ ] Add ShellCheck for Bash static analysis.
+- [x] Add ShellCheck for Bash static analysis.
 - [ ] Document developer commands in README.
 
 ### M0 Exit Criteria
 
 - [ ] Local repository contains complete foundation files.
-- [ ] `make check` completes successfully.
+- [x] `make check` completes successfully.
 - [ ] Basic setup instructions are documented.
-- [ ] The first commit exists on GitHub.
+- [x] The first commit exists on GitHub.
 - [ ] A VM snapshot exists before advanced experiments.
 
 ---
