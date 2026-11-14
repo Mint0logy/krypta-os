@@ -1,0 +1,24 @@
+# Generated build artifacts
+/out/
+/build/
+/.cache/
+/tmp/
+
+# Disk images
+*.img
+*.raw
+*.qcow2
+
+# Compiled objects
+*.o
+*.ko
+*.cmd
+
+# Logs and secrets
+*.log
+.env
+.env.*
+
+# Editor files
+.vscode/
+.idea/
