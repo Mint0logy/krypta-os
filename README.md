@@ -7,6 +7,17 @@ KRYPTA OS is a personal embedded Linux project focused on transforming Android s
 
 > **Status:** Early development. The system has not yet booted on the target device.
 
+> [!CAUTION]
+> **EXPERIMENTAL SOFTWARE — USE AT YOUR OWN RISK**
+>
+> KRYPTA OS is a personal hobby project and is not intended for production use.
+>
+> Installing or flashing this software may cause **permanent data loss, device instability, or render your device unbootable (brick)**.
+>
+> There is **no guarantee of compatibility, functionality, or recovery**.
+>
+> You are solely responsible for any consequences of using this software.
+
 ## Project Goals
 
 - Run native Linux on a repurposed smartphone.
@@ -57,6 +68,12 @@ KRYPTA OS
 ```
 
 ## Development
+
+List available commands:
+
+```bash
+make help
+```
 
 Run the environment validation:
 

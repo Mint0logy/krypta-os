@@ -59,11 +59,11 @@ The project will be considered successful when:
 - [x] Verify Fastboot connectivity.
 - [x] Check bootloader lock status.
 - [x] Identify the active A/B boot slot.
-- [ ] Create `docs/hardware.md`.
-- [ ] Record current firmware and Android version.
-- [ ] Record available RAM and storage capacity.
-- [ ] Record hardware limitations and damaged components.
-- [ ] Document relevant device partitions without modifying them.
+- [x] Create `docs/hardware.md`.
+- [x] Record current firmware and Android version.
+- [x] Record available RAM and storage capacity.
+- [x] Record hardware limitations and damaged components.
+- [x] Document relevant device partitions without modifying them.
 
 ## M0.2 — Development Environment
 
@@ -75,9 +75,9 @@ The project will be considered successful when:
 - [x] Install basic development tools.
 - [x] Install Visual Studio Code.
 - [x] Verify all required base tools with `make check`.
-- [ ] Record VM and host architecture.
-- [ ] Create a clean VirtualBox snapshot.
-- [ ] Document environment setup in `docs/setup.md`.
+- [x] Record VM and host architecture.
+- [x] Create a clean VirtualBox snapshot.
+- [x] Document environment setup in `docs/setup.md`.
 
 ## M0.3 — Repository Initialization
 
@@ -96,20 +96,20 @@ The project will be considered successful when:
 
 - [x] Implement `scripts/check-env.sh`.
 - [x] Make the environment script executable.
-- [ ] Add `make help`.
+- [x] Add `make help`.
 - [x] Add `make check`.
 - [x] Validate the Makefile.
-- [ ] Verify the environment script reports missing tools.
+- [x] Verify the environment script reports missing tools.
 - [x] Add ShellCheck for Bash static analysis.
-- [ ] Document developer commands in README.
+- [x] Document developer commands in README.
 
 ### M0 Exit Criteria
 
-- [ ] Local repository contains complete foundation files.
+- [x] Local repository contains complete foundation files.
 - [x] `make check` completes successfully.
-- [ ] Basic setup instructions are documented.
+- [x] Basic setup instructions are documented.
 - [x] The first commit exists on GitHub.
-- [ ] A VM snapshot exists before advanced experiments.
+- [x] A VM snapshot exists before advanced experiments.
 
 ---
 
