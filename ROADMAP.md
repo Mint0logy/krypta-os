@@ -46,7 +46,7 @@ The project will be considered successful when:
 
 # M0 — Foundation
 
-**Status:** In progress  
+**Status:** DONE
 **Goal:** Establish a clean and documented development environment.
 
 ## M0.1 — Hardware Identification
@@ -112,7 +112,7 @@ The project will be considered successful when:
 
 # M1 — ARM64 Toolchain
 
-**Status:** Not started  
+**Status:** In progress
 **Goal:** Build ARM64 binaries from an x86-64 Ubuntu host.
 
 ## M1.1 — Build Dependencies
@@ -120,8 +120,8 @@ The project will be considered successful when:
 - [ ] Install Clang.
 - [ ] Install LLVM utilities.
 - [ ] Install LLD linker.
-- [ ] Install GNU Make and other required build tools.
-- [ ] Install GCC cross-compiler for AArch64, if needed.
+- [x] Install GNU Make and other required build tools.
+- [x] Install GCC cross-compiler for AArch64, if needed.
 - [ ] Install Device Tree Compiler (`dtc`).
 - [ ] Install kernel build dependencies.
 - [ ] Install archive and compression utilities.
@@ -129,29 +129,29 @@ The project will be considered successful when:
 
 ## M1.2 — Cross-Compilation
 
-- [ ] Understand host, build and target architectures.
-- [ ] Create a minimal C test program.
-- [ ] Cross-compile the program for AArch64.
-- [ ] Inspect the resulting binary with `file`.
-- [ ] Inspect ELF headers using `readelf`.
-- [ ] Verify the generated architecture is AArch64.
-- [ ] Document the compilation command.
+- [x] Understand host, build and target architectures.
+- [x] Create a minimal C test program.
+- [x] Cross-compile the program for AArch64.
+- [x] Inspect the resulting binary with `file`.
+- [x] Inspect ELF headers using `readelf`.
+- [x] Verify the generated architecture is AArch64.
+- [x] Document the compilation command.
 - [ ] Create `scripts/test-toolchain.sh`.
 
 ## M1.3 — Build Automation
 
 - [ ] Add `make toolchain-check`.
-- [ ] Add a directory for generated outputs.
-- [ ] Add automatic output-directory creation.
-- [ ] Prevent generated binaries from entering Git.
+- [x] Add a directory for generated outputs.
+- [x] Add automatic output-directory creation.
+- [x] Prevent generated binaries from entering Git.
 - [ ] Record selected compiler versions.
 - [ ] Document the toolchain configuration.
 
 ### M1 Exit Criteria
 
-- [ ] AArch64 binaries can be built reproducibly.
-- [ ] Toolchain diagnostics pass.
-- [ ] Generated files remain outside version control.
+- [x] AArch64 binaries can be built reproducibly.
+- [x] Toolchain diagnostics pass.
+- [x] Generated files remain outside version control.
 - [ ] Build dependencies and versions are documented.
 
 ---

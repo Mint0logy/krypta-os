@@ -20,7 +20,7 @@ check_command() {
 
 missing=0
 
-for tool in git make gcc python3 curl wget; do
+for tool in git make gcc python3 curl wget aarch64-linux-gnu-gcc aarch64-linux-gnu-readelf file; do
     check_command "$tool" || missing=1
 done
 
