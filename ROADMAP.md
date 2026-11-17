@@ -6,7 +6,7 @@
 **Project type:** Personal embedded Linux / ARM64 distribution project  
 **Target device:** Xiaomi 11 Lite 5G NE (`lisa`)  
 **Target architecture:** ARM64 / AArch64  
-**Build host:** Ubuntu 24.04 LTS (x86-64, VirtualBox)  
+**Build host:** Ubuntu Server 24.04 LTS (AMD64, VirtualBox on Windows 11)
 **Base distribution:** Alpine Linux / postmarketOS ecosystem  
 **Status:** Experimental / early development
 
@@ -67,16 +67,13 @@ The project will be considered successful when:
 
 ## M0.2 — Development Environment
 
-- [x] Install Ubuntu 24.04 LTS in VirtualBox.
-- [x] Configure VM CPU, RAM and storage.
-- [x] Configure VM networking.
-- [x] Configure shared clipboard.
-- [x] Install Git.
-- [x] Install basic development tools.
-- [x] Install Visual Studio Code.
-- [x] Verify all required base tools with `make check`.
-- [x] Record VM and host architecture.
-- [x] Create a clean VirtualBox snapshot.
+- [x] Set up Ubuntu Server 24.04 LTS (AMD64) in VirtualBox on Windows 11.
+- [x] Configure the VM with 4 vCPUs, 6 GB RAM, a 70 GB disk and NAT networking.
+- [x] Enable OpenSSH Server and configure VirtualBox NAT port forwarding.
+- [x] Verify SSH from Windows and a VS Code Remote - SSH terminal.
+- [x] Keep GitHub authentication on Windows; use Git bundles to transfer history.
+- [x] Verify the repository exists at `/home/mintology/krypta-os`.
+- [ ] Verify base development tools with `make check` in the Ubuntu VM.
 - [x] Document environment setup in `docs/setup.md`.
 
 ## M0.3 — Repository Initialization
@@ -106,7 +103,7 @@ The project will be considered successful when:
 ### M0 Exit Criteria
 
 - [x] Local repository contains complete foundation files.
-- [x] `make check` completes successfully.
+- [x] `make check` completes successfully in the Ubuntu Server VM.
 - [x] Basic setup instructions are documented.
 - [x] The first commit exists on GitHub.
 - [x] A VM snapshot exists before advanced experiments.

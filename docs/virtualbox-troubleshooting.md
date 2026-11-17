@@ -1,6 +1,11 @@
 
 # VirtualBox Troubleshooting
 
+> **Final outcome:** The Ubuntu Desktop VM problems were not resolved. Work
+> moved to Ubuntu Server without a graphical interface; no single definitive
+> cause for all of the freezes was established. This document is a historical
+> record of the unresolved Ubuntu Desktop issues.
+
 ## Environment
 
 | Component | Configuration |
@@ -127,7 +132,7 @@ Value: 7.2.22
 
 The overlapping Guest Additions installations may be contributing to service conflicts. This has not yet been confirmed as the root cause of the graphical failures.
 
-## Current status
+## Status at the time
 
 **Unresolved — investigation ongoing.**
 
@@ -136,9 +141,9 @@ The overlapping Guest Additions installations may be contributing to service con
 - Graphical startup remains unreliable.
 - Oracle Guest Additions kernel modules 7.2.22 are loaded.
 - Oracle Guest Additions user-land service is not running correctly.
-- No further package removal or graphics configuration changes have been performed.
+- No further package removal or graphics configuration changes had been performed.
 
-## Next steps
+## Planned investigation at the time
 
 1. Test whether stopping `virtualbox-guest-utils.service` allows `vboxadd-service.service` to start.
 2. Verify which Guest Additions processes and services are active.

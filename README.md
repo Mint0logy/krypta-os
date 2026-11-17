@@ -35,7 +35,7 @@ KRYPTA OS is a personal embedded Linux project focused on transforming Android s
 | Codename | `lisa` |
 | SoC | Snapdragon 778G |
 | Architecture | ARM64 / AArch64 |
-| Build host | Ubuntu 24.04 LTS |
+| Build host | Ubuntu Server 24.04 LTS (AMD64, VirtualBox) |
 
 ## Technology Stack
 
@@ -68,6 +68,11 @@ KRYPTA OS
 ```
 
 ## Development
+
+Development runs in an Ubuntu Server VM on Windows 11, accessed with VS Code
+Remote - SSH. GitHub operations are performed on Windows; committed history is
+transferred to and from the VM with Git bundles. See
+[docs/setup.md](docs/setup.md) for the setup and workflow.
 
 List available commands:
 
