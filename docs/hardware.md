@@ -150,8 +150,7 @@ Mobile connectivity was tested repeatedly over approximately ten minutes.
 Multiple SpeedTest.pl measurements produced similar results without observed
 connectivity failures. Wi-Fi was tested separately with mobile data disabled.
 
-<img src="images/diagnostics/network-benchmark.svg" width="800"
-     alt="Mobile and Wi-Fi network benchmark dashboard">
+![Mobile and Wi-Fi network benchmark dashboard](./images/diagnostics/network-benchmark.svg)
 
 | Metric | Mobile 5G | Wi-Fi |
 |---|---:|---:|
