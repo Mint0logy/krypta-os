@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" role="img" aria-labelledby="title desc">
+  <title id="title">Post-repair device verification report</title>
+  <desc id="desc">Two-column verification results for SIM, network, battery, boot, ADB, Fastboot, stability and unperformed tests.</desc>
+  <rect width="800" height="520" fill="#0D1117"/>
+  <rect x="16" y="16" width="768" height="488" rx="12" fill="#1C2128" stroke="#30363D"/>
+  <text x="48" y="48" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="20" font-weight="700">Device Verification</text>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14">
+    <g fill="#16A34A">
+      <circle cx="55" cy="82" r="7"/><path d="M51 82l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/><text x="72" y="87" fill="#E6EDF3">SIM detection</text><text x="360" y="87" text-anchor="end" font-weight="700">PASS</text>
+      <circle cx="55" cy="112" r="7"/><path d="M51 112l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/><text x="72" y="117" fill="#E6EDF3">Mobile connectivity</text><text x="360" y="117" text-anchor="end" font-weight="700">PASS</text>
+      <circle cx="55" cy="142" r="7"/><path d="M51 142l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/><text x="72" y="147" fill="#E6EDF3">Wi-Fi connectivity</text><text x="360" y="147" text-anchor="end" font-weight="700">PASS</text>
+      <circle cx="55" cy="172" r="7"/><path d="M51 172l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/><text x="72" y="177" fill="#E6EDF3">Battery diagnostics</text><text x="360" y="177" text-anchor="end" font-weight="700">PASS</text>
+      <circle cx="55" cy="202" r="7"/><path d="M51 202l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/><text x="72" y="207" fill="#E6EDF3">Cold boot</text><text x="360" y="207" text-anchor="end" font-weight="700">PASS (3/3)</text>
+      <circle cx="55" cy="232" r="7"/><path d="M51 232l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/><text x="72" y="237" fill="#E6EDF3">Android reboot</text><text x="360" y="237" text-anchor="end" font-weight="700">PASS</text>
+    </g>
+    <g fill="#16A34A">
+      <circle cx="440" cy="82" r="7"/><path d="M436 82l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/><text x="457" y="87" fill="#E6EDF3">ADB communication</text><text x="752" y="87" text-anchor="end" font-weight="700">PASS</text>
+      <circle cx="440" cy="112" r="7" fill="#D29922"/><text x="457" y="117" fill="#E6EDF3">Fastboot communication</text><text x="752" y="117" text-anchor="end" fill="#D29922" font-weight="700">PASS WITH WORKAROUND</text>
+      <circle cx="440" cy="142" r="7"/><path d="M436 142l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/><text x="457" y="147" fill="#E6EDF3">Fastboot reboot</text><text x="752" y="147" text-anchor="end" font-weight="700">PASS</text>
+      <circle cx="440" cy="172" r="7"/><path d="M436 172l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/><text x="457" y="177" fill="#E6EDF3">Basic device stability</text><text x="752" y="177" text-anchor="end" font-weight="700">PASS</text>
+    </g>
+    <circle cx="440" cy="202" r="7" fill="#64748B"/><text x="457" y="207" fill="#8B949E">USB file transfer (MTP)</text><text x="752" y="207" text-anchor="end" fill="#8B949E" font-weight="700">NOT VERIFIED</text>
+    <circle cx="440" cy="232" r="7" fill="#64748B"/><text x="457" y="237" fill="#8B949E">Long-duration stress test</text><text x="752" y="237" text-anchor="end" fill="#8B949E" font-weight="700">NOT PERFORMED</text>
+  </g>
+  <line x1="48" y1="270" x2="752" y2="270" stroke="#30363D"/>
+  <text x="48" y="300" fill="#8B949E" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14">Basic stability verified; native Linux support remains untested.</text>
+  <text x="48" y="330" fill="#16A34A" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="700">PASS</text>
+  <text x="96" y="330" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14">verified result</text>
+  <text x="240" y="330" fill="#D29922" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="700">AMBER</text>
+  <text x="300" y="330" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14">Fastboot workaround</text>
+  <text x="520" y="330" fill="#64748B" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14" font-weight="700">GRAY</text>
+  <text x="568" y="330" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14">not verified/performed</text>
+</svg>

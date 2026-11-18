@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 410" role="img" aria-labelledby="title desc">
+  <title id="title">M4.1 Hardware Repair completed</title>
+  <desc id="desc">Hardware repair milestone is complete with six of six tasks completed on 2026-11-18.</desc>
+  <rect width="800" height="410" fill="#0D1117"/>
+  <rect x="16" y="16" width="768" height="378" rx="12" fill="#1C2128" stroke="#30363D"/>
+  <text x="48" y="58" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="22" font-weight="700">M4.1 — Hardware Repair</text>
+  <text x="48" y="102" fill="#16A34A" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="32" font-weight="700">100%</text>
+  <text x="752" y="102" text-anchor="end" fill="#8B949E" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16">6/6 tasks completed</text>
+  <rect x="48" y="118" width="704" height="14" rx="7" fill="#30363D"/>
+  <rect x="48" y="118" width="704" height="14" rx="7" fill="#16A34A"/>
+  <circle cx="55" cy="158" r="7" fill="#16A34A"/><path d="M51 158l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="72" y="164" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16">Hardware damage identified</text>
+  <circle cx="55" cy="188" r="7" fill="#16A34A"/><path d="M51 188l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="72" y="194" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16">SIM reader replaced</text>
+  <circle cx="55" cy="218" r="7" fill="#16A34A"/><path d="M51 218l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="72" y="224" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16">SIM detection verified</text>
+  <circle cx="55" cy="248" r="7" fill="#16A34A"/><path d="M51 248l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="72" y="254" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16">Mobile connectivity restored</text>
+  <circle cx="55" cy="278" r="7" fill="#16A34A"/><path d="M51 278l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="72" y="284" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16">USB connectivity verified</text>
+  <circle cx="55" cy="308" r="7" fill="#16A34A"/><path d="M51 308l3 3 5-6" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="72" y="314" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16">Basic device stability verified</text>
+  <line x1="48" y1="340" x2="752" y2="340" stroke="#30363D"/>
+  <text x="48" y="368" fill="#16A34A" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700">COMPLETED</text>
+  <text x="752" y="368" text-anchor="end" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="600">2026-11-18</text>
+</svg>

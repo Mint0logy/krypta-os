@@ -5,7 +5,7 @@
 
 KRYPTA OS is a personal embedded Linux project focused on transforming Android smartphones into portable ARM64 cybersecurity laboratories.
 
-> **Status:** Early development. The system has not yet booted on the target device.
+> **Status:** Early development. The damaged SIM-reader flex cable has been repaired. The system has not yet booted on the target device.
 
 > [!CAUTION]
 > **EXPERIMENTAL SOFTWARE — USE AT YOUR OWN RISK**
@@ -36,6 +36,22 @@ KRYPTA OS is a personal embedded Linux project focused on transforming Android s
 | SoC | Snapdragon 778G |
 | Architecture | ARM64 / AArch64 |
 | Build host | Ubuntu Server 24.04 LTS (AMD64, VirtualBox) |
+| Android | 14 / HyperOS |
+| Bootloader | Locked; unlocking remains pending |
+
+**Hardware repair:** The damaged SIM-reader flex cable was successfully replaced on
+2026-11-18. SIM detection, mobile connectivity, Wi-Fi, USB charging, ADB,
+Fastboot, and basic device stability have been verified under Android.
+M4.1 — Hardware Repair is complete. Native Linux support remains under
+investigation, and KRYPTA OS has not yet booted on the target device.
+
+See [docs/hardware.md](docs/hardware.md) for detailed verification results and
+photographic documentation.
+
+<p align="center">
+  <img src="docs/images/diagnostics/hardware-repair-status.svg" width="800"
+       alt="M4.1 Hardware Repair milestone status">
+</p>
 
 ## Technology Stack
 

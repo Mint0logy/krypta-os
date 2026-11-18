@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" role="img" aria-labelledby="title desc">
+  <title id="title">Battery diagnostics dashboard</title>
+  <desc id="desc">Battery level, temperature, voltage, Android-reported health, charging status and battery detection.</desc>
+  <rect width="800" height="330" fill="#0D1117"/>
+  <rect x="16" y="16" width="768" height="298" rx="12" fill="#1C2128" stroke="#30363D"/>
+  <text x="48" y="52" fill="#8B949E" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15">BATTERY LEVEL</text>
+  <text x="48" y="92" fill="#16A34A" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="34" font-weight="700">66%</text>
+  <rect x="48" y="104" width="320" height="12" rx="6" fill="#30363D"/>
+  <rect x="48" y="104" width="211" height="12" rx="6" fill="#16A34A"/>
+  <text x="432" y="52" fill="#8B949E" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15">TEMPERATURE</text>
+  <text x="432" y="92" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="34" font-weight="700">28°C</text>
+  <text x="432" y="116" fill="#8B949E" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="14">Normal during test</text>
+  <text x="48" y="158" fill="#8B949E" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15">VOLTAGE</text>
+  <text x="48" y="198" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="34" font-weight="700">4.385 V</text>
+  <text x="432" y="158" fill="#8B949E" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="15">ANDROID-REPORTED HEALTH</text>
+  <text x="432" y="198" fill="#16A34A" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="34" font-weight="700">Good</text>
+  <line x1="48" y1="218" x2="752" y2="218" stroke="#30363D"/>
+  <text x="48" y="246" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16">Charging status</text>
+  <text x="752" y="246" text-anchor="end" fill="#16A34A" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700">Charging</text>
+  <text x="48" y="282" fill="#E6EDF3" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16">Battery detection</text>
+  <text x="752" y="282" text-anchor="end" fill="#16A34A" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif" font-size="16" font-weight="700">PASS</text>
+</svg>

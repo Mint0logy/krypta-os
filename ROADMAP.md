@@ -8,7 +8,7 @@
 **Target architecture:** ARM64 / AArch64  
 **Build host:** Ubuntu Server 24.04 LTS (AMD64, VirtualBox on Windows 11)
 **Base distribution:** Alpine Linux / postmarketOS ecosystem  
-**Status:** Experimental / early development
+**Status:** Hardware preparation complete; bootloader unlocking and native Linux support pending
 
 ---
 
@@ -44,6 +44,19 @@ The project will be considered successful when:
 
 ---
 
+## Development Updates
+
+### 2026-11-18
+
+- Replaced the damaged Xiaomi `lisa` SIM-reader flex cable.
+- Verified SIM detection, mobile connectivity, Wi-Fi, USB charging, ADB,
+  Fastboot, cold boot, Android reboot and basic post-repair stability.
+- Completed M4.1 — Hardware Repair.
+- Identified the USB reconnection workaround required for Fastboot on Windows.
+- Preserved locked bootloader and unverified native Linux support as active blockers.
+
+---
+
 # M0 — Foundation
 
 **Status:** DONE
@@ -73,7 +86,7 @@ The project will be considered successful when:
 - [x] Verify SSH from Windows and a VS Code Remote - SSH terminal.
 - [x] Keep GitHub authentication on Windows; use Git bundles to transfer history.
 - [x] Verify the repository exists at `/home/mintology/krypta-os`.
-- [ ] Verify base development tools with `make check` in the Ubuntu VM.
+- [x] Verify base development tools with `make check` in the Ubuntu VM.
 - [x] Document environment setup in `docs/setup.md`.
 
 ## M0.3 — Repository Initialization
@@ -278,17 +291,19 @@ The project will be considered successful when:
 
 # M4 — Device Preparation & First Boot
 
-**Status:** Blocked by bootloader and hardware preparation  
+**Status:** Hardware preparation complete; blocked by bootloader unlocking
 **Goal:** Safely boot native Linux on the Xiaomi `lisa`.
 
 ## M4.1 — Hardware Repair
 
+**Status:** Completed — 2026-11-18
+
 - [x] Identify the damaged SIM-reader flex connection.
-- [ ] Replace the damaged SIM-reader assembly.
-- [ ] Verify SIM detection.
-- [ ] Verify mobile network connectivity.
-- [ ] Confirm USB connectivity remains functional.
-- [ ] Confirm device stability before unlocking.
+- [x] Replace the damaged SIM-reader assembly.
+- [x] Verify SIM detection.
+- [x] Verify mobile network connectivity.
+- [x] Confirm USB connectivity remains functional.
+- [x] Confirm device stability before unlocking.
 
 ## M4.2 — Bootloader Preparation
 
@@ -500,9 +515,13 @@ The project will be considered successful when:
 | Blocker | Impact | Planned Resolution |
 |---|---|---|
 | Locked bootloader | Prevents custom device boot | Official Xiaomi unlocking procedure |
-| Damaged SIM-reader flex | Blocks SIM-based unlocking requirements | Replace hardware and verify mobile connectivity |
 | Unverified Linux device support | Kernel may not boot or initialize required peripherals | Research and test kernel and Device Tree support |
 | Unverified Wi-Fi/AP support | May prevent the planned standalone hotspot | Test drivers, firmware and fallback network modes |
+
+**Known Fastboot limitation:** Windows does not immediately recognize the device
+after `adb reboot bootloader`. Disconnecting and reconnecting the USB-C cable
+before using `fastboot devices` restores communication; this is documented as a
+USB re-enumeration or Windows driver limitation until the root cause is confirmed.
 
 ---
 
@@ -542,9 +561,11 @@ The project will be considered successful when:
 | M1 | ARM64 Toolchain | Not started |
 | M2 | Hardware Research & Kernel | Not started |
 | M3 | Minimal Root Filesystem | Not started |
-| M4 | Device Preparation & First Boot | Blocked / planned |
+| M4 | Device Preparation & First Boot | Hardware preparation complete; bootloader unlocking pending |
 | M5 | Networking & Headless Access | Not started |
 | M6 | Cybersecurity Laboratory | Not started |
 | M7 | Build Quality & Automation | Not started |
 
-**Next major objective:** Complete M0 and verify the ARM64 toolchain.
+**Next device-related objective:** M4.2 — Bootloader Preparation.
+**Next major objective:** Complete M4.2 and preserve a safe recovery path before
+native Linux image preparation.
