@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1050" role="img" aria-labelledby="title desc">
+<title id="title">KRYPTA OS planned architecture</title>
+<desc id="desc">Security lab and CLI/TUI above KRYPTA Core, Yocto userspace, upstream Linux, Device Tree and firmware, and Xiaomi lisa hardware. Alpine is used temporarily for bring-up.</desc>
+<rect width="800" height="1050" rx="20" fill="#080b10"/>
+<rect x="24" y="20" width="752" height="889" rx="18" fill="none" stroke="#67788f" stroke-width="1.7" stroke-dasharray="10 7"/>
+<text x="400" y="57" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700" fill="#e8edf5" text-anchor="middle" letter-spacing="5">KRYPTA OS</text>
+<text x="400" y="83" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="600" fill="#93a4bb" text-anchor="middle" letter-spacing="2">TARGET ARCHITECTURE  /  PLANNED</text>
+<rect x="42" y="102" width="350" height="166" rx="12" stroke="#728197" stroke-width="1.7" fill="#0d1118"/>
+<text x="217.0" y="133" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#e8edf5" text-anchor="middle" letter-spacing="0">SECURITY LAB</text>
+<rect x="57" y="147" width="320" height="29" rx="5" fill="#151b24"/>
+<text x="217.0" y="167" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Native security tools</text>
+<rect x="57" y="182" width="320" height="29" rx="5" fill="#151b24"/>
+<text x="217.0" y="202" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Optional isolated Kali</text>
+<rect x="57" y="217" width="320" height="29" rx="5" fill="#151b24"/>
+<text x="217.0" y="237" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Wireless auditing</text>
+<rect x="408" y="102" width="350" height="166" rx="12" stroke="#29c66f" stroke-width="1.7" fill="#06140d"/>
+<text x="583.0" y="133" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#e8edf5" text-anchor="middle" letter-spacing="0">KRYPTA CLI / TUI</text>
+<rect x="423" y="147" width="320" height="29" rx="5" fill="#0b2618"/>
+<text x="583.0" y="167" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Administration</text>
+<rect x="423" y="182" width="320" height="29" rx="5" fill="#0b2618"/>
+<text x="583.0" y="202" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Package management</text>
+<rect x="423" y="217" width="320" height="29" rx="5" fill="#0b2618"/>
+<text x="583.0" y="237" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Lab management</text>
+<rect x="42" y="284" width="716" height="166" rx="12" stroke="#29c66f" stroke-width="1.7" fill="#06140d"/>
+<text x="400.0" y="315" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#e8edf5" text-anchor="middle" letter-spacing="0">KRYPTA CORE</text>
+<rect x="57" y="329" width="686" height="29" rx="5" fill="#0b2618"/>
+<text x="400.0" y="349" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Hardware API</text>
+<rect x="57" y="364" width="686" height="29" rx="5" fill="#0b2618"/>
+<text x="400.0" y="384" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">System monitoring</text>
+<rect x="57" y="399" width="686" height="29" rx="5" fill="#0b2618"/>
+<text x="400.0" y="419" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Network management</text>
+<rect x="42" y="466" width="716" height="132" rx="12" stroke="#4c9cff" stroke-width="1.7" fill="#091421"/>
+<text x="400.0" y="497" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#e8edf5" text-anchor="middle" letter-spacing="0">YOCTO USERSPACE</text>
+<rect x="57" y="511" width="686" height="29" rx="5" fill="#102238"/>
+<text x="400.0" y="531" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Libraries · Init · Services</text>
+<rect x="57" y="546" width="686" height="29" rx="5" fill="#102238"/>
+<text x="400.0" y="566" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Native packages · Trusted package feed</text>
+<rect x="42" y="614" width="716" height="166" rx="12" stroke="#e8b14e" stroke-width="1.7" fill="#191306"/>
+<text x="400.0" y="645" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#e8edf5" text-anchor="middle" letter-spacing="0">KRYPTA LINUX KERNEL</text>
+<rect x="57" y="659" width="686" height="29" rx="5" fill="#2b210d"/>
+<text x="400.0" y="679" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Upstream Linux + device-specific patches</text>
+<rect x="57" y="694" width="686" height="29" rx="5" fill="#2b210d"/>
+<text x="400.0" y="714" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Hardware drivers · Kernel configuration</text>
+<rect x="57" y="729" width="686" height="29" rx="5" fill="#2b210d"/>
+<text x="400.0" y="749" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Optional experimental modules</text>
+<rect x="42" y="796" width="716" height="98" rx="12" stroke="#e8b14e" stroke-width="1.7" fill="#191306"/>
+<text x="400.0" y="827" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" fill="#e8edf5" text-anchor="middle" letter-spacing="0">DEVICE TREE &amp; FIRMWARE</text>
+<rect x="57" y="841" width="686" height="29" rx="5" fill="#2b210d"/>
+<text x="400.0" y="861" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#e8edf5" text-anchor="middle" letter-spacing="0">Xiaomi lisa — Board Support Package</text>
+<path d="M400 909 V929" stroke="#67788f" stroke-width="2"/>
+<rect x="42" y="929" width="716" height="62" rx="11" stroke="#728197" stroke-width="1.7" fill="#0d1118"/>
+<text x="400" y="955" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="700" fill="#e8edf5" text-anchor="middle" letter-spacing="0">XIAOMI 11 LITE 5G NE</text>
+<text x="400" y="978" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#b5c0cf" text-anchor="middle" letter-spacing="0">Snapdragon 778G  ·  SM7325  ·  ARM64</text>
+<text x="400" y="1014" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#93a4bb" text-anchor="middle" letter-spacing="0.4">BRING-UP: ALPINE ARM64  →  P0 + SSH VALIDATION  →  YOCTO</text>
+<text x="400" y="1035" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="400" fill="#93a4bb" text-anchor="middle" letter-spacing="0">Internal Wi-Fi preferred · USB fallback · Manual system images</text>
+</svg>

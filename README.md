@@ -1,117 +1,54 @@
-
 # KRYPTA OS
 
 **A pocket-sized Linux cybersecurity laboratory.**
 
-KRYPTA OS is a personal embedded Linux project focused on transforming Android smartphones into portable ARM64 cybersecurity laboratories.
-
-> **Status:** Early development. The damaged SIM-reader flex cable has been repaired. The system has not yet booted on the target device.
+KRYPTA OS is a personal hobby, educational and engineering portfolio project that aims to turn a repurposed Xiaomi 11 Lite 5G NE into a native, headless ARM64 Linux system for authorized security research, network diagnostics and embedded Linux development. The repository is public for transparency and portfolio purposes; it is not a community distribution or a supported product.
 
 > [!CAUTION]
-> **EXPERIMENTAL SOFTWARE — USE AT YOUR OWN RISK**
+> **EXPERIMENTAL SOFTWARE — USE AT YOUR OWN RISK.**
 >
-> KRYPTA OS is a personal hobby project and is not intended for production use.
->
-> Installing or flashing this software may cause **permanent data loss, device instability, or render your device unbootable (brick)**.
->
-> There is **no guarantee of compatibility, functionality, or recovery**.
->
-> You are solely responsible for any consequences of using this software.
+> Unlocking, booting or flashing experimental software may erase data, damage hardware (including through unsafe charging or thermal behavior), or permanently brick the device. Compatibility, functionality, safety and recovery are not guaranteed. This project is not intended for production use. Anyone attempting to reproduce it does so at their own risk. Back up data and establish a device-specific recovery procedure before modifying the device. Security testing must be limited to systems you own or are authorized to test.
 
-## Project Goals
+## Current status
 
-- Run native Linux on a repurposed smartphone.
-- Build a minimal ARM64 root filesystem.
-- Enable remote access through SSH.
-- Configure Wi-Fi networking.
-- Create a reproducible build process.
-- Learn embedded Linux and cybersecurity.
+- Development VM and ARM64 cross-compilation/runtime smoke test verified (QEMU user mode).
+- SIM-reader repair and basic Android hardware verification completed on 2026-11-18.
+- Bootloader remains locked; official unlock authorization is pending.
+- Native Linux has not yet been booted or flashed on the target.
 
-## Target Hardware
-
-| Component | Specification |
-|---|---|
-| Device | Xiaomi 11 Lite 5G NE |
-| Codename | `lisa` |
-| SoC | Snapdragon 778G |
-| Architecture | ARM64 / AArch64 |
-| Build host | Ubuntu Server 24.04 LTS (AMD64, VirtualBox) |
-| Android | 14 / HyperOS |
-| Bootloader | Locked; unlocking remains pending |
-
-**Hardware repair:** The damaged SIM-reader flex cable was successfully replaced on
-2026-11-18. SIM detection, mobile connectivity, Wi-Fi, USB charging, ADB,
-Fastboot, and basic device stability have been verified under Android.
-M4.1 — Hardware Repair is complete. Native Linux support remains under
-investigation, and KRYPTA OS has not yet booted on the target device.
-
-See [docs/hardware.md](docs/hardware.md) for detailed verification results and
-photographic documentation.
+## Planned architecture
 
 <p align="center">
-  <img src="docs/images/diagnostics/hardware-repair-status.svg" width="800"
-       alt="M4.1 Hardware Repair milestone status">
+  <img src="docs/images/architecture.svg" width="620" alt="Planned KRYPTA OS architecture: security lab and CLI/TUI over KRYPTA Core, Yocto-built userspace, upstream Linux with patches, device tree and firmware, and Xiaomi lisa hardware">
 </p>
 
-## Technology Stack
+The initial bring-up uses a minimal Alpine ARM64 userspace. After essential hardware (P0) and SSH are validated, the project transitions to a custom Yocto-built distribution. One upstream-based Linux kernel is maintained with device-specific patches as needed and optional experimental modules. Native Yocto packages and a personal package feed power the custom CLI/TUI; Kali is an optional isolated environment, not the base distribution.
 
-| Layer | Technology |
-|---|---|
-| Kernel | Linux |
-| Base system | Alpine Linux / postmarketOS tooling |
-| Build tools | Bash, GNU Make, ARM64 toolchain |
-| Remote access | OpenSSH |
-| Version control | Git |
+## v1.0 objectives
 
-## Planned Architecture
+- Native Linux with persistent storage, headless administration and reliable SSH.
+- Safe basic hardware operation and practical networking, including a hotspot where supported.
+- Monitor mode and packet injection on a verified interface: built-in Wi-Fi preferred, USB adapter accepted.
+- KRYPTA Core, Hardware API, monitoring, network management, CLI/TUI and native package management.
+- Reproducible versioned images, manually installed system releases and a verified recovery path.
 
-```text
-KRYPTA OS
-├── Device support
-│   ├── ARM64 Linux kernel
-│   ├── Device Tree
-│   └── Hardware configuration
-├── Root filesystem
-│   ├── Alpine Linux base
-│   ├── System services
-│   └── Networking and SSH
-├── Security laboratory
-│   ├── Network diagnostics
-│   └── Security tools
-└── Build system
-    ├── Environment checks
-    └── Build scripts
-```
+Android is preserved during controlled bring-up wherever feasible; the final goal is to replace it. No OTA service or public image distribution is planned. Educational reimplementations remain isolated from safety-critical device code.
 
 ## Development
 
-Development runs in an Ubuntu Server VM on Windows 11, accessed with VS Code
-Remote - SSH. GitHub operations are performed on Windows; committed history is
-transferred to and from the VM with Git bundles. See
-[docs/setup.md](docs/setup.md) for the setup and workflow.
-
-List available commands:
-
 ```bash
 make help
-```
-
-Run the environment validation:
-
-```bash
 make check
-```
-
-Cross-compile, verify and execute the ARM64 test binary using QEMU User Mode:
-
-```bash
 make arm64-runtime-check
 ```
 
-## Roadmap
+These commands run in the Ubuntu build VM; the runtime check proves execution of a test binary under QEMU, not native phone boot.
 
-See [ROADMAP.md](ROADMAP.md) for the development checklist.
+## Documentation
 
-## Disclaimer
-
-KRYPTA OS is an experimental educational project for authorized cybersecurity research. Hardware support is not guaranteed.
+| Document | Purpose |
+|---|---|
+| [ROADMAP.md](ROADMAP.md) | Milestones, progress and blockers |
+| [docs/setup.md](docs/setup.md) | Build host, toolchain and Git workflow |
+| [docs/hardware.md](docs/hardware.md) | Device inventory, repair evidence and diagnostics |
+| [docs/kernel-support.md](docs/kernel-support.md) | Source-backed hardware support and educational opportunities |
