@@ -54,6 +54,16 @@ The project will be considered successful when:
 - Completed M4.1 — Hardware Repair.
 - Identified the USB reconnection workaround required for Fastboot on Windows.
 - Preserved locked bootloader and unverified native Linux support as active blockers.
+- Synchronized the Windows and Ubuntu repositories using Git bundles.
+- Revalidated the development environment and ARM64 cross-compilation.
+- Installed QEMU User Mode 8.2.2.
+- Successfully executed the ARM64 test binary on the x86_64 build host.
+- Verified the ARM64 glibc runtime and successful process exit code.
+- Encountered the Xiaomi bootloader unlock application quota limit.
+- Automated ARM64 runtime verification through `make arm64-runtime-check`.
+- Added QEMU to development environment diagnostics.
+- Verified automatic binary rebuilding after manual artifact removal.
+- Passed ShellCheck and Git whitespace validation.
 
 ---
 
@@ -85,7 +95,7 @@ The project will be considered successful when:
 - [x] Enable OpenSSH Server and configure VirtualBox NAT port forwarding.
 - [x] Verify SSH from Windows and a VS Code Remote - SSH terminal.
 - [x] Keep GitHub authentication on Windows; use Git bundles to transfer history.
-- [x] Verify the repository exists at `/home/mintology/krypta-os`.
+- [x] Verify the repository exists at `~/krypta-os`.
 - [x] Verify base development tools with `make check` in the Ubuntu VM.
 - [x] Document environment setup in `docs/setup.md`.
 
@@ -135,6 +145,7 @@ The project will be considered successful when:
 - [ ] Install LLD linker.
 - [x] Install GNU Make and other required build tools.
 - [x] Install GCC cross-compiler for AArch64, if needed.
+- [x] Install QEMU User Mode for AArch64 execution.
 - [ ] Install Device Tree Compiler (`dtc`).
 - [ ] Install kernel build dependencies.
 - [ ] Install archive and compression utilities.
@@ -149,6 +160,8 @@ The project will be considered successful when:
 - [x] Inspect ELF headers using `readelf`.
 - [x] Verify the generated architecture is AArch64.
 - [x] Document the compilation command.
+- [x] Execute the ARM64 test program using QEMU User Mode.
+- [x] Verify successful program output and exit code.
 - [ ] Create `scripts/test-toolchain.sh`.
 
 ## M1.3 — Build Automation
@@ -157,6 +170,8 @@ The project will be considered successful when:
 - [x] Add a directory for generated outputs.
 - [x] Add automatic output-directory creation.
 - [x] Prevent generated binaries from entering Git.
+- [x] Add `make arm64-runtime-check`.
+- [x] Include QEMU in development environment diagnostics.
 - [ ] Record selected compiler versions.
 - [ ] Document the toolchain configuration.
 
@@ -514,6 +529,7 @@ The project will be considered successful when:
 
 | Blocker | Impact | Planned Resolution |
 |---|---|---|
+| Xiaomi bootloader unlock application quota | Prevents obtaining unlock authorization | Retry through the official Xiaomi Community application |
 | Locked bootloader | Prevents custom device boot | Official Xiaomi unlocking procedure |
 | Unverified Linux device support | Kernel may not boot or initialize required peripherals | Research and test kernel and Device Tree support |
 | Unverified Wi-Fi/AP support | May prevent the planned standalone hotspot | Test drivers, firmware and fallback network modes |
@@ -557,8 +573,8 @@ USB re-enumeration or Windows driver limitation until the root cause is confirme
 
 | Milestone | Name | Status |
 |---|---|---|
-| M0 | Foundation | In progress |
-| M1 | ARM64 Toolchain | Not started |
+| M0 | Foundation | Completed |
+| M1 | ARM64 Toolchain | In progress |
 | M2 | Hardware Research & Kernel | Not started |
 | M3 | Minimal Root Filesystem | Not started |
 | M4 | Device Preparation & First Boot | Hardware preparation complete; bootloader unlocking pending |

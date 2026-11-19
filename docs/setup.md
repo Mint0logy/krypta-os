@@ -73,7 +73,11 @@ missing base packages from Ubuntu's package repositories:
 
 ```bash
 sudo apt update
-sudo apt install git make gcc python3 curl wget
+sudo apt install \
+    git make gcc python3 curl wget \
+    gcc-aarch64-linux-gnu binutils-aarch64-linux-gnu \
+    file shellcheck \
+    qemu-user
 ```
 
 The ARM64 cross-compilation toolchain is a separate, unverified M1 task. Do not

@@ -102,6 +102,12 @@ Run the environment validation:
 make check
 ```
 
+Cross-compile, verify and execute the ARM64 test binary using QEMU User Mode:
+
+```bash
+make arm64-runtime-check
+```
+
 ## Roadmap
 
 See [ROADMAP.md](ROADMAP.md) for the development checklist.
